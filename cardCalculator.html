@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="cardCalculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid py-5">
+        <div class="container w-75 mt-5 rounded shadow  bg-custom">
+            <div class="row align-items-stretch">
+                <div class="col bg d-lg-block d- col-md-5 col-lg-5 col-xl-6 px-5">
+                    <h3 class="my-5">Adjust your inputs</h3>
+                    <label for="customRange1" class="form-label label-title">Deals per year</label>
+                    <span id="rangeValue1" class="value-span"></span>
+                    <input type="range" min="0" max="1000" class="form-range mb-5" value="50" id="customRange1">
+                    
+                    
+                    <label for="customRange2" class="form-label label-title">Average # of Buyers per Buyer4s List</label>
+                    <span id="rangeValue2" class="value-span"></span>
+                    <input type="range" min="0" max="200" class="form-range mb-5" value="50" id="customRange2">
+                    
+                    
+                    <label for="customRange3" class="form-label label-title">Average Fees per Transaction</label>
+                    <span id="rangeValue3" class="value-span"></span>
+                    <input type="range" min="0" max="4%" class="form-range mb-5" value="0%" id="customRange3">
+                    
+                    
+                    <label for="customRange4" class="form-label label-title"># of Managing Directors</label>
+                    <span id="rangeValue4" class="value-span"></span>
+                    <input type="range" min="0" max="40" class="form-range mb-5" value="50" id="customRange4">
+                    
+                </div>
+                <div class="col bg-white p-5 rounded-end">
+                    <div class="card mx-auto" style="max-width: 600px;">
+                        <div class="card pb-3 card-bg ">
+                            <div class="card-header">
+                                ROI
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text" id="roiValue">0%</p>
+                            </div>
+                        </div>
+                        <div class="card pb-3 card-bg">
+                            <div class="card-header">
+                                Hours saved
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text" id="hoursSaved">0</p>
+                            </div>
+                        </div>
+                        <div class="card pb-3 card-bg">
+                            <div class="card-header">
+                                Additional revenue
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text" id="additionalRevenue">$0</p>
+                            </div>
+                        </div>
+                        <div class="card pb-3 card-button card-bg">
+                            <div class="card-header">
+                                <button>Get started for free</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./cardCalculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+body{
+    background: #eac953;
+    background: linear-gradient(to right,  #f4e4aa,   #f2cb3d);
+}
+
+.bg-custom{
+    background-color: #E7ECFB;
+}
+
+.form-range::-webkit-slider-runnable-track {
+    background-color: #D5D5EA
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: white;
+    border: 2px solid #6C32E7;
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: #6C32E7;
+  }
+
+  input[type="range"]::-webkit-slider-thumb::before {
+    content: attr(value);
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    line-height: 20px;
+    background: #ddd;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -5px;
+    font-size: 14px;
+  }
+
+  .card-button{
+    text-align: center;
+  }
+
+  .card-button button{
+    text-align: center;
+    background-color: #6C32E7;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+  }
+
+  .card-button button:hover{
+    background-color: #9266ef;
+  }
+
+  .card{
+    border: none;
+    background-color: white;
+  }
+
+  .card-header{
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+  }
+
+  .card-text{
+    color:  #6C32E7;
+    font-size: 50px;
+    font-weight: bolder;
+    border: none;
+  }
+
+.value-span{
+    float: right;
+    color:  #6C32E7;
+    font-weight: bolder;
+    font-size: 25px;
+  }
+
+  .label-title{
+    font-weight: bold;
+    font-size: 20px;
+  }
